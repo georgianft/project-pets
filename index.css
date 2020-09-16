@@ -1,4 +1,4 @@
-html body {
+html, body {
     margin: 0;
     padding: 0;
 }
@@ -8,13 +8,18 @@ body {
 }
 
 .main-nav {
-    text-align: center;
     font-size: 1.5rem;
 }
 
+.main-nav a {
+    margin-right: 5px;
+    color: #FFFFFF;
+}
+
 .header {
-    padding: 10px 0px;
-    background-color:#303F9F;
+    background-color: #303F9F;
+    /* padding-top: 10px; */
+    padding: 20px 30px;
 }
 
 .search-div {
@@ -22,12 +27,25 @@ body {
     width: 30%;
 }
 
-.search-input {
+.author-info {
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.statement-title {
+    text-align: center;
+}
+
+.statement-img {
     width: 100%;
-    border: 1px solid tan;
-    border-radius: 8px;
-    padding: 10px;
-    height: 20px;
+    height: 200px;
+    cursor: pointer;
+    object-fit: cover;
+    /* border: 1px solid #BDBDBD; */
+    border-width: 1px;
+    border-color:  #BDBDBD;
+    border-top-style: solid;
+    border-bottom-style: solid;
 }
 
 .pet-list {
@@ -36,12 +54,16 @@ body {
 }
 
 .statement {
+    padding: 0px 5px;
+    width: 300px;
+    border: 1px solid #BDBDBD;
     margin-right: 50px;
 }
 
-.statement-img {
+.search-input {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border: 1px ;
+    border: 1px solid #BDBDBD;
+    border-radius: 8px;
+    padding: 10px;
+    height: 20px;
 }
